@@ -4,7 +4,7 @@ import corner
 
 run_name = 'match_test_4'
 
-f = h5py.File(run_name + '_data0_1126259642-413_analysis_H1L1_result.hdf5', 'r')
+f = h5py.File('data/' + run_name + '_data0_1126259642-413_analysis_H1L1_result.hdf5', 'r')
 
 for key in f.keys():
     print(key)
@@ -58,6 +58,6 @@ corner.overplot_lines(fig, upper_quantiles, color='red')
 
 fig.suptitle(run_name)
 
-fig.savefig(run_name + '_corner_plot.png')
+fig.savefig('plots/' + run_name + '_corner_plot.png')
 
 print(fixed_param_dict)
