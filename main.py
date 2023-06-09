@@ -2,7 +2,7 @@ import h5py
 import numpy as np
 import corner
 
-run_name = 'match_test_4'
+run_name = 'match_test_5'
 
 f = h5py.File('data/' + run_name + '_data0_1126259642-413_analysis_H1L1_result.hdf5', 'r')
 
